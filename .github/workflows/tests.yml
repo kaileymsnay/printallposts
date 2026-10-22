@@ -66,5 +66,5 @@ jobs:
   # listed in .github/epv-allowed.txt
   epv:
     uses: phpbbmodders/.github/.github/workflows/epv.yml@v1
-      with:
-        EXTNAME: phpbbmodders/printallposts
+    with:
+      EXTNAME: phpbbmodders/printallposts
