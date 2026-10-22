@@ -1,6 +1,6 @@
 services:
-    rmcgirr83.printallposts.listener:
-        class: rmcgirr83\printallposts\event\listener
+    phpbbmodders.printallposts.listener:
+        class: phpbbmodders\printallposts\event\main_listener
         arguments:
             - '@auth'
             - '@config'

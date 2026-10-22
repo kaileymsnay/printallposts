@@ -1,11 +1,13 @@
 <?php
 /**
-*
-* @package Print all posts in a topic
-* @copyright (c) 2020 Rich McGirr(RMcGirr83)
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
-*
-*/
+ *
+ * Print All Posts extension for the phpBB Forum Software package
+ *
+ * @copyright (c) 2026, phpBB Modders, https://www.phpbbmodders.com/
+ * @copyright (c) 2015, Rich McGirr (RMcGirr83)
+ * @license GNU General Public License, version 2 (GPL-2.0)
+ *
+ */
 
 if (!defined('IN_PHPBB'))
 {
@@ -28,9 +30,13 @@ if (empty($lang) || !is_array($lang))
 // You do not need this where single placeholders are used, e.g. 'Message %d' is fine
 // equally where a string contains only two placeholders which are used to wrap text
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+//
+// Some characters you may want to copy&paste:
+// ’ » “ ” …
+//
 
 $lang = array_merge($lang, [
-	//Donation
-	'FORBIDDEN'			=> 'Forbidden',
+	'FORBIDDEN'	=> 'Forbidden',
+
 	'PRINT_ALL_POSTS'	=> 'Print all',
 ]);
