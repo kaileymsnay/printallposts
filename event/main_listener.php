@@ -50,7 +50,7 @@ class main_listener implements EventSubscriberInterface
 	 * @param \phpbb\language\language  $language
 	 * @param \phpbb\request\request    $request
 	 * @param \phpbb\template\template  $template
-	 * 
+	 *
 	 * @access public
 	 */
 	public function __construct(\phpbb\auth\auth $auth, \phpbb\config\config $config, \phpbb\language\language $language, \phpbb\request\request $request, \phpbb\template\template $template)

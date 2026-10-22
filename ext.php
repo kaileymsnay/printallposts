@@ -43,19 +43,16 @@ class ext extends \phpbb\extension\base
 	{
 		$enableable = $this->check_phpbb_version() && $this->check_php_version();
 
+		$language = $this->container->get('language');
+		$language->add_lang('printallposts_install', 'phpbbmodders/printallposts');
+
 		if (!$enableable)
 		{
-			$language = $this->container->get('language');
-			$language->add_lang('printallposts_install', 'phpbbmodders/printallposts');
-
 			return $language->lang('PRINTALLPOSTS_NOT_ENABLEABLE');
 		}
 
 		if ($this->container->get('ext.manager')->is_enabled(self::OLD_EXT_NAME))
 		{
-			$language = $this->container->get('language');
-			$language->add_lang('printallposts_install', 'phpbbmodders/printallposts');
-
 			return $language->lang('PRINTALLPOSTS_DISABLE_OLD', self::OLD_EXT_NAME);
 		}
 
