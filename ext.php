@@ -44,7 +44,7 @@ class ext extends \phpbb\extension\base
 		$enableable = $this->check_phpbb_version() && $this->check_php_version();
 
 		$language = $this->container->get('language');
-		$language->add_lang('printallposts_install', 'phpbbmodders/printallposts');
+		$language->add_lang('install_printallposts', 'phpbbmodders/printallposts');
 
 		if (!$enableable)
 		{
