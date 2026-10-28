@@ -34,6 +34,16 @@
 				<div class="author">{{ lang('POST_BY_AUTHOR') }} <strong>{{ postrow.POST_AUTHOR }}</strong></div>
 				<div class="content">{{ postrow.MESSAGE }}</div>
 			</div>
+			{% if postrow.S_HAS_ATTACHMENTS %}
+				<dl class="attachbox">
+					<dt>
+						{{ lang('ATTACHMENTS') }}{{ lang('COLON') }}
+					</dt>
+					{% for attachment in postrow.attachment %}
+						<dd>{{ attachment.DISPLAY_ATTACHMENT }}</dd>
+					{% endfor %}
+				</dl>
+			{% endif %}
 			<hr />
 		{% endfor %}
 	</div>

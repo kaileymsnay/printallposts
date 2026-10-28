@@ -3,8 +3,8 @@
     "type": "phpbb-extension",
     "description": "Lets users who can print topics in a forum print every post in a topic on one page.",
     "homepage": "https://www.phpbbmodders.com/",
-    "version": "1.0.4",
-    "time": "2026-10-22",
+    "version": "1.0.5",
+    "time": "2026-10-28",
     "keywords": [
         "phpbb",
         "extension",
