@@ -1,9 +1,21 @@
-.github         export-ignore
-.gitignore      export-ignore
-.gitattributes  export-ignore
-build.xml       export-ignore
-composer.lock   export-ignore
-phpunit.xml.*   export-ignore
-scripts         export-ignore
-tests           export-ignore
-README.MD       export-ignore
+# Shared line endings and binary files
+* text=auto eol=lf
+
+# Never convert line endings in binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+
+.github/		export-ignore
+.gitignore		export-ignore
+.gitattributes	export-ignore
+build.xml		export-ignore
+composer.lock	export-ignore
+phpunit.xml.*	export-ignore
+scripts/		export-ignore
+tests/			export-ignore
+README.md		export-ignore
+docs/images/	export-ignore
